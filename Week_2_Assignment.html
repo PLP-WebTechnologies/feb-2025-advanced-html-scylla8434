@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Learn HTML5</li>
+        <li>Practice CSS</li>
+        <li>Explore JavaScript</li>
+        <li>Build Projects</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Beautiful Scenery from Pexels">
+
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Teddy Anangwe</td>
+            <td>123 Nairobit</td>
+            <td>+254746711570</td>
+            <td>teddyanangwe@email.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak St</td>
+            <td>+9876543210</td>
+            <td>janesmith@email.com</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>789 Pine St</td>
+            <td>+1122334455</td>
+            <td>michael@email.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Brown</td>
+            <td>101 Elm St</td>
+            <td>+6677889900</td>
+            <td>sarah@email.com</td>
+        </tr>
+        <tr>
+            <td>Vitalis Juma</td>
+            <td>202 Maple St</td>
+            <td>+5544332211</td>
+            <td>david@email.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="coding" name="interests" value="Coding">
+        <label for="coding">Coding</label>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
